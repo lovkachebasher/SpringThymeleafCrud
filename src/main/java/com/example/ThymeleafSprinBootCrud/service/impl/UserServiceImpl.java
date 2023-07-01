@@ -56,4 +56,10 @@ public class UserServiceImpl implements UserService {
     public List<User> getAllUser() {
         return userRepository.findAll();
     }
+
+    @Override
+    public void deleteAllUsers() {
+        userRepository.deleteAll();
+        logger.info("All users was deleted");
+    }
 }

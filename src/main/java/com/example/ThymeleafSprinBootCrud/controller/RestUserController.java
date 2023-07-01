@@ -2,13 +2,12 @@ package com.example.ThymeleafSprinBootCrud.controller;
 
 import com.example.ThymeleafSprinBootCrud.entity.User;
 import com.example.ThymeleafSprinBootCrud.service.UserService;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
+@RequestMapping("/api")
 public class RestUserController {
 
     private final UserService userService;
@@ -17,13 +16,33 @@ public class RestUserController {
         this.userService = userService;
     }
 
-    @GetMapping("/api/{id}")
+    @GetMapping
+    public List<User> getAllUser() {
+        return userService.getAllUser();
+    }
+
+    @GetMapping("/{id}")
     public User getUserById(@PathVariable String id) {
         return userService.getUserById(id);
+    }
+
+    @PostMapping("/add")
+    public void addUser(User user) {
+        userService.addUser(user);
     }
 
     @DeleteMapping("/delete/{id}")
     public void deleteUserById(@PathVariable String id) {
         userService.deleteUser(id);
+    }
+
+    @PutMapping
+    public void updateUser(User user) {
+        userService.updateUser(user);
+    }
+
+    @DeleteMapping
+    public void deleteAllUsers() {
+        userService.deleteAllUsers();
     }
 }
