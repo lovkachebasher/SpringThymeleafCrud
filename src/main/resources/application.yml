@@ -1,0 +1,14 @@
+server:
+  port: 8666
+  error:
+    include-binding-errors: always
+    include-exception: true
+    include-stacktrace: always
+
+spring:
+  application:
+    name: users-managed
+  data:
+    mongodb:
+      authentication-database: admin
+      uri: mongodb://localhost:27017/UsersDB
