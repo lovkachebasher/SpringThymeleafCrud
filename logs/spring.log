@@ -1,0 +1,242 @@
+2023-07-03 06:37:32.396  INFO 10444 --- [restartedMain] c.e.T.ThymeleafSpringBootCrudApplication : Starting ThymeleafSpringBootCrudApplication using Java 20.0.1 on yokina-machine with PID 10444 (/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes started by yokina in /home/yokina/yokina-gitlab/ThymeleafSprinBootCrud)
+2023-07-03 06:37:32.398  INFO 10444 --- [restartedMain] c.e.T.ThymeleafSpringBootCrudApplication : The following profiles are active: dev
+2023-07-03 06:37:32.436  INFO 10444 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-03 06:37:32.437  INFO 10444 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-03 06:37:32.492  WARN 10444 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes/com/example/ThymeleafSprinBootCrud/ThymeleafSpringBootCrudApplication.class]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes/com/example/ThymeleafSprinBootCrud/ThymeleafSpringBootCrudApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 64
+2023-07-03 06:37:32.508 ERROR 10444 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes/com/example/ThymeleafSprinBootCrud/ThymeleafSpringBootCrudApplication.class]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes/com/example/ThymeleafSprinBootCrud/ThymeleafSpringBootCrudApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 64
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:452) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:315) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:276) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:336) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:252) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:285) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:99) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:751) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:569) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) ~[spring-boot-2.4.0.jar:2.4.0]
+	at com.example.ThymeleafSprinBootCrud.ThymeleafSpringBootCrudApplication.main(ThymeleafSpringBootCrudApplication.java:21) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.0.jar:2.4.0]
+Caused by: org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes/com/example/ThymeleafSprinBootCrud/ThymeleafSpringBootCrudApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 64
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:60) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:49) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:123) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:429) ~[spring-context-5.3.1.jar:5.3.1]
+	... 24 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 64
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:189) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:170) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:156) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:277) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:57) ~[spring-core-5.3.1.jar:5.3.1]
+	... 28 common frames omitted
+
+2023-07-03 06:39:07.064  INFO 10594 --- [restartedMain] c.e.T.ThymeleafSpringBootCrudApplication : Starting ThymeleafSpringBootCrudApplication using Java 20.0.1 on yokina-machine with PID 10594 (/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes started by yokina in /home/yokina/yokina-gitlab/ThymeleafSprinBootCrud)
+2023-07-03 06:39:07.066  INFO 10594 --- [restartedMain] c.e.T.ThymeleafSpringBootCrudApplication : The following profiles are active: dev
+2023-07-03 06:39:07.101  INFO 10594 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-03 06:39:07.102  INFO 10594 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-03 06:39:07.155  WARN 10594 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes/com/example/ThymeleafSprinBootCrud/ThymeleafSpringBootCrudApplication.class]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes/com/example/ThymeleafSprinBootCrud/ThymeleafSpringBootCrudApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 64
+2023-07-03 06:39:07.173 ERROR 10594 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes/com/example/ThymeleafSprinBootCrud/ThymeleafSpringBootCrudApplication.class]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes/com/example/ThymeleafSprinBootCrud/ThymeleafSpringBootCrudApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 64
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:452) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:315) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:276) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:336) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:252) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:285) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:99) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:751) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:569) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) ~[spring-boot-2.4.0.jar:2.4.0]
+	at com.example.ThymeleafSprinBootCrud.ThymeleafSpringBootCrudApplication.main(ThymeleafSpringBootCrudApplication.java:21) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.0.jar:2.4.0]
+Caused by: org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes/com/example/ThymeleafSprinBootCrud/ThymeleafSpringBootCrudApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 64
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:60) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:49) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:123) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:429) ~[spring-context-5.3.1.jar:5.3.1]
+	... 24 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 64
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:189) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:170) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:156) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:277) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:57) ~[spring-core-5.3.1.jar:5.3.1]
+	... 28 common frames omitted
+
+2023-07-03 06:39:59.702  INFO 10932 --- [restartedMain] c.e.T.ThymeleafSpringBootCrudApplication : Starting ThymeleafSpringBootCrudApplication using Java 20.0.1 on yokina-machine with PID 10932 (/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes started by yokina in /home/yokina/yokina-gitlab/ThymeleafSprinBootCrud)
+2023-07-03 06:39:59.704  INFO 10932 --- [restartedMain] c.e.T.ThymeleafSpringBootCrudApplication : The following profiles are active: dev
+2023-07-03 06:39:59.738  INFO 10932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-03 06:39:59.738  INFO 10932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-03 06:39:59.793  WARN 10932 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes/com/example/ThymeleafSprinBootCrud/ThymeleafSpringBootCrudApplication.class]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes/com/example/ThymeleafSprinBootCrud/ThymeleafSpringBootCrudApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 64
+2023-07-03 06:39:59.810 ERROR 10932 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes/com/example/ThymeleafSprinBootCrud/ThymeleafSpringBootCrudApplication.class]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes/com/example/ThymeleafSprinBootCrud/ThymeleafSpringBootCrudApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 64
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:452) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:315) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:276) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:336) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:252) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:285) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:99) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:751) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:569) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) ~[spring-boot-2.4.0.jar:2.4.0]
+	at com.example.ThymeleafSprinBootCrud.ThymeleafSpringBootCrudApplication.main(ThymeleafSpringBootCrudApplication.java:21) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.0.jar:2.4.0]
+Caused by: org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes/com/example/ThymeleafSprinBootCrud/ThymeleafSpringBootCrudApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 64
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:60) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:49) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:123) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:429) ~[spring-context-5.3.1.jar:5.3.1]
+	... 24 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 64
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:189) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:170) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:156) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:277) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:57) ~[spring-core-5.3.1.jar:5.3.1]
+	... 28 common frames omitted
+
+2023-07-03 07:05:27.381  INFO 15729 --- [restartedMain] c.e.T.ThymeleafSpringBootCrudApplication : Starting ThymeleafSpringBootCrudApplication using Java 17.0.7 on yokina-machine with PID 15729 (/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes started by yokina in /home/yokina/yokina-gitlab/ThymeleafSprinBootCrud)
+2023-07-03 07:05:27.382  INFO 15729 --- [restartedMain] c.e.T.ThymeleafSpringBootCrudApplication : The following profiles are active: dev
+2023-07-03 07:05:27.415  INFO 15729 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-03 07:05:27.415  INFO 15729 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-03 07:05:27.457  WARN 15729 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes/com/example/ThymeleafSprinBootCrud/ThymeleafSpringBootCrudApplication.class]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes/com/example/ThymeleafSprinBootCrud/ThymeleafSpringBootCrudApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 61
+2023-07-03 07:05:27.484 ERROR 15729 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes/com/example/ThymeleafSprinBootCrud/ThymeleafSpringBootCrudApplication.class]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes/com/example/ThymeleafSprinBootCrud/ThymeleafSpringBootCrudApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 61
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:452) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:315) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:276) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:336) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:252) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:285) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:99) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:751) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:569) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) ~[spring-boot-2.4.0.jar:2.4.0]
+	at com.example.ThymeleafSprinBootCrud.ThymeleafSpringBootCrudApplication.main(ThymeleafSpringBootCrudApplication.java:21) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.0.jar:2.4.0]
+Caused by: org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes/com/example/ThymeleafSprinBootCrud/ThymeleafSpringBootCrudApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 61
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:60) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:49) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:123) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:429) ~[spring-context-5.3.1.jar:5.3.1]
+	... 26 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 61
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:189) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:170) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:156) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:277) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:57) ~[spring-core-5.3.1.jar:5.3.1]
+	... 30 common frames omitted
+
+2023-07-03 07:06:50.329  INFO 16077 --- [restartedMain] c.e.T.ThymeleafSpringBootCrudApplication : Starting ThymeleafSpringBootCrudApplication using Java 20.0.1 on yokina-machine with PID 16077 (/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes started by yokina in /home/yokina/yokina-gitlab/ThymeleafSprinBootCrud)
+2023-07-03 07:06:50.331  INFO 16077 --- [restartedMain] c.e.T.ThymeleafSpringBootCrudApplication : The following profiles are active: dev
+2023-07-03 07:06:50.364  INFO 16077 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-03 07:06:50.364  INFO 16077 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-03 07:06:50.415  WARN 16077 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes/com/example/ThymeleafSprinBootCrud/ThymeleafSpringBootCrudApplication.class]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes/com/example/ThymeleafSprinBootCrud/ThymeleafSpringBootCrudApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 61
+2023-07-03 07:06:50.441 ERROR 16077 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes/com/example/ThymeleafSprinBootCrud/ThymeleafSpringBootCrudApplication.class]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes/com/example/ThymeleafSprinBootCrud/ThymeleafSpringBootCrudApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 61
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:452) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:315) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:276) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:336) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:252) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:285) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:99) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:751) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:569) ~[spring-context-5.3.1.jar:5.3.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) ~[spring-boot-2.4.0.jar:2.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) ~[spring-boot-2.4.0.jar:2.4.0]
+	at com.example.ThymeleafSprinBootCrud.ThymeleafSpringBootCrudApplication.main(ThymeleafSpringBootCrudApplication.java:21) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.0.jar:2.4.0]
+Caused by: org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes/com/example/ThymeleafSprinBootCrud/ThymeleafSpringBootCrudApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 61
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:60) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:49) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:123) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:429) ~[spring-context-5.3.1.jar:5.3.1]
+	... 24 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 61
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:189) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:170) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:156) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:277) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:57) ~[spring-core-5.3.1.jar:5.3.1]
+	... 28 common frames omitted
+

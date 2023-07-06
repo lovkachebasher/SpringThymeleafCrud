@@ -18,10 +18,12 @@ public class CustomExceptionHandler {
     public ResponseEntity<String> handle(GlobalException e) {
 
         logger.error(e.getMessage(), e);
-        return switch (e) {
-            case NotExistException ne -> getResponseWithStatusCode(ne, HttpStatus.NOT_FOUND);
-            default -> new ResponseEntity<>("something wrong", HttpStatus.I_AM_A_TEAPOT);
-        };
+        //TODO
+//        return switch (e) {
+//            case NotExistException ne -> getResponseWithStatusCode(ne, HttpStatus.NOT_FOUND);
+//            default -> new ResponseEntity<>("something wrong", HttpStatus.I_AM_A_TEAPOT);
+//        };
+        return ResponseEntity.ok("colla");
     }
 
 

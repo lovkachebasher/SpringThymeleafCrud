@@ -6,9 +6,12 @@ server:
     include-stacktrace: always
 
 spring:
+  profiles:
+    active: dev
   application:
     name: users-managed
   data:
     mongodb:
       authentication-database: admin
       uri: mongodb://localhost:27017/UsersDB
+      auto-index-creation: true
