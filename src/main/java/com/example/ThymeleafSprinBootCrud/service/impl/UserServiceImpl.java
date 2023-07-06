@@ -6,6 +6,7 @@ import com.example.ThymeleafSprinBootCrud.repository.UserRepository;
 import com.example.ThymeleafSprinBootCrud.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,6 +17,7 @@ public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
     private final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
 
+    @Autowired
     public UserServiceImpl(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
@@ -41,7 +43,7 @@ public class UserServiceImpl implements UserService {
         );
         userRepository.deleteById(user.getId());
         userRepository.save(user);
-        logger.info("User successfully update");
+        logger.info("User successfully update: " + user);
     }
 
     @Override

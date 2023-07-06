@@ -11,7 +11,6 @@ import java.util.List;
 @Controller
 
 public class UserController {
-    //TODO -> где обрабатывать ошибки ?
     //TODO -> написать тесты - интеграциионные(тест контейнер)
 
     private final UserService userService;
@@ -35,7 +34,7 @@ public class UserController {
 
     @PostMapping("/save-user")
     public String addUser(User user) {
-        if (user.getId() == null || user.getId().isEmpty() || user.getId().isBlank()) {
+        if (user.getId() == null || user.getId().isEmpty() ) {
             userService.addUser(user);
         } else {
             try {
