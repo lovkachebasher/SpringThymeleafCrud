@@ -21,6 +21,10 @@ public class ThymeleafSpringBootCrudApplication implements CommandLineRunner {
         SpringApplication.run(ThymeleafSpringBootCrudApplication.class, args);
     }
 
+    //TODO ci/cd должно срабатывать когда пушишь в мастер --> для начала этого будет достаточно,
+    // позже сделать
+    // --дев стенд-- и --тест стенд--
+    // переименовать ветку мастер в dev
 
     @Override
     public void run(String... args) {
