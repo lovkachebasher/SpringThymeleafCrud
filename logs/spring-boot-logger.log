@@ -1,0 +1,93 @@
+2023-07-07 16:40:01,943 INFO org.springframework.boot.StartupInfoLogger [main] Starting TryToTestContainersMongoDb using Java 20.0.1 on yokina-machine with PID 34530 (started by yokina in /home/yokina/yokina-gitlab/ThymeleafSprinBootCrud)
+2023-07-07 16:40:01,945 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.0, Spring v5.3.1
+2023-07-07 16:40:01,945 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: dev
+2023-07-07 16:40:02,144 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-07-07 16:40:02,178 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 31 ms. Found 1 MongoDB repository interfaces.
+2023-07-07 16:40:02,382 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:32769], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2023-07-07 16:40:02,432 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='64a815b2ba715f1d02250f4a', description='null'}-localhost:32769] Opened connection [connectionId{localValue:1, serverValue:4}] to localhost:32769
+2023-07-07 16:40:02,432 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-rtt-ClusterId{value='64a815b2ba715f1d02250f4a', description='null'}-localhost:32769] Opened connection [connectionId{localValue:2, serverValue:3}] to localhost:32769
+2023-07-07 16:40:02,432 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='64a815b2ba715f1d02250f4a', description='null'}-localhost:32769] Monitor thread successfully connected to server with description ServerDescription{address=localhost:32769, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=15702920, setName='docker-rs', canonicalAddress=7bce9c30b8ca:27017, hosts=[7bce9c30b8ca:27017], passives=[], arbiters=[], primary='7bce9c30b8ca:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000001, setVersion=1, topologyVersion=TopologyVersion{processId=64a815b050e32e42cced3ff8, counter=6}, lastWriteDate=Fri Jul 07 16:40:01 MSK 2023, lastUpdateTimeNanos=17050986442898}
+2023-07-07 16:40:02,662 INFO org.springframework.boot.StartupInfoLogger [main] Started TryToTestContainersMongoDb in 1.059 seconds (JVM running for 5.08)
+2023-07-07 16:40:02,692 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Opened connection [connectionId{localValue:3, serverValue:5}] to localhost:32769
+2023-07-07 16:40:03,027 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='64a815b2ba715f1d02250f4a', description='null'}-localhost:32769] Exception in monitor thread while connecting to server localhost:32769
+com.mongodb.MongoSocketReadException: Prematurely reached end of stream
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:112)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:648)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:513)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:356)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:316)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2023-07-07 16:40:03,364 INFO com.mongodb.diagnostics.logging.SLF4JLogger [SpringContextShutdownHook] Closed connection [connectionId{localValue:3, serverValue:5}] to localhost:32769 because there was a socket exception raised on another connection from this pool.
+2023-07-07 16:40:52,445 INFO org.springframework.boot.StartupInfoLogger [main] Starting TryToTestContainersMongoDb using Java 20.0.1 on yokina-machine with PID 35191 (started by yokina in /home/yokina/yokina-gitlab/ThymeleafSprinBootCrud)
+2023-07-07 16:40:52,446 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.0, Spring v5.3.1
+2023-07-07 16:40:52,447 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: dev
+2023-07-07 16:40:52,640 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-07-07 16:40:52,672 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 29 ms. Found 1 MongoDB repository interfaces.
+2023-07-07 16:40:52,863 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:32771], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2023-07-07 16:40:52,909 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-rtt-ClusterId{value='64a815e47a52f946cf0262b1', description='null'}-localhost:32771] Opened connection [connectionId{localValue:1, serverValue:4}] to localhost:32771
+2023-07-07 16:40:52,909 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='64a815e47a52f946cf0262b1', description='null'}-localhost:32771] Opened connection [connectionId{localValue:2, serverValue:3}] to localhost:32771
+2023-07-07 16:40:52,909 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='64a815e47a52f946cf0262b1', description='null'}-localhost:32771] Monitor thread successfully connected to server with description ServerDescription{address=localhost:32771, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=13758596, setName='docker-rs', canonicalAddress=8f49daae4133:27017, hosts=[8f49daae4133:27017], passives=[], arbiters=[], primary='8f49daae4133:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000001, setVersion=1, topologyVersion=TopologyVersion{processId=64a815e2c901a1c10fd79c65, counter=6}, lastWriteDate=Fri Jul 07 16:40:51 MSK 2023, lastUpdateTimeNanos=17101463091415}
+2023-07-07 16:40:53,154 INFO org.springframework.boot.StartupInfoLogger [main] Started TryToTestContainersMongoDb in 1.062 seconds (JVM running for 4.28)
+2023-07-07 16:40:53,185 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Opened connection [connectionId{localValue:3, serverValue:5}] to localhost:32771
+2023-07-07 16:43:00,642 INFO org.springframework.boot.StartupInfoLogger [main] Starting TryToTestContainersMongoDb using Java 20.0.1 on yokina-machine with PID 35781 (started by yokina in /home/yokina/yokina-gitlab/ThymeleafSprinBootCrud)
+2023-07-07 16:43:00,644 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.0, Spring v5.3.1
+2023-07-07 16:43:00,644 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: dev
+2023-07-07 16:43:00,844 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-07-07 16:43:00,875 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 27 ms. Found 1 MongoDB repository interfaces.
+2023-07-07 16:43:01,071 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:32773], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2023-07-07 16:43:01,117 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='64a81665cf7d21706a2ed7eb', description='null'}-localhost:32773] Opened connection [connectionId{localValue:2, serverValue:4}] to localhost:32773
+2023-07-07 16:43:01,117 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-rtt-ClusterId{value='64a81665cf7d21706a2ed7eb', description='null'}-localhost:32773] Opened connection [connectionId{localValue:1, serverValue:3}] to localhost:32773
+2023-07-07 16:43:01,117 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='64a81665cf7d21706a2ed7eb', description='null'}-localhost:32773] Monitor thread successfully connected to server with description ServerDescription{address=localhost:32773, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=16265813, setName='docker-rs', canonicalAddress=be6e386637d4:27017, hosts=[be6e386637d4:27017], passives=[], arbiters=[], primary='be6e386637d4:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000001, setVersion=1, topologyVersion=TopologyVersion{processId=64a81662663f40e4dc2a87ae, counter=6}, lastWriteDate=Fri Jul 07 16:42:59 MSK 2023, lastUpdateTimeNanos=17229671180589}
+2023-07-07 16:43:01,351 INFO org.springframework.boot.StartupInfoLogger [main] Started TryToTestContainersMongoDb in 1.038 seconds (JVM running for 4.31)
+2023-07-07 16:43:01,378 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Opened connection [connectionId{localValue:3, serverValue:5}] to localhost:32773
+2023-07-07 16:43:22,380 INFO com.mongodb.diagnostics.logging.SLF4JLogger [SpringContextShutdownHook] Closed connection [connectionId{localValue:3, serverValue:5}] to localhost:32773 because the pool has been closed.
+2023-07-07 16:43:27,358 INFO org.springframework.boot.StartupInfoLogger [main] Starting TryToTestContainersMongoDb using Java 20.0.1 on yokina-machine with PID 36290 (started by yokina in /home/yokina/yokina-gitlab/ThymeleafSprinBootCrud)
+2023-07-07 16:43:27,359 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.0, Spring v5.3.1
+2023-07-07 16:43:27,360 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: dev
+2023-07-07 16:43:27,558 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-07-07 16:43:27,590 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 29 ms. Found 1 MongoDB repository interfaces.
+2023-07-07 16:43:27,794 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:32775], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2023-07-07 16:43:27,838 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-rtt-ClusterId{value='64a8167f64e0b65f245fc19d', description='null'}-localhost:32775] Opened connection [connectionId{localValue:2, serverValue:3}] to localhost:32775
+2023-07-07 16:43:27,838 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='64a8167f64e0b65f245fc19d', description='null'}-localhost:32775] Opened connection [connectionId{localValue:1, serverValue:4}] to localhost:32775
+2023-07-07 16:43:27,839 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='64a8167f64e0b65f245fc19d', description='null'}-localhost:32775] Monitor thread successfully connected to server with description ServerDescription{address=localhost:32775, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=14446428, setName='docker-rs', canonicalAddress=1778665edad9:27017, hosts=[1778665edad9:27017], passives=[], arbiters=[], primary='1778665edad9:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000001, setVersion=1, topologyVersion=TopologyVersion{processId=64a8167d4b73a820333c4c78, counter=6}, lastWriteDate=Fri Jul 07 16:43:26 MSK 2023, lastUpdateTimeNanos=17256392861479}
+2023-07-07 16:43:28,071 INFO org.springframework.boot.StartupInfoLogger [main] Started TryToTestContainersMongoDb in 1.044 seconds (JVM running for 4.292)
+2023-07-07 16:43:28,309 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Opened connection [connectionId{localValue:3, serverValue:5}] to localhost:32775
+2023-07-07 16:43:34,915 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='64a8167f64e0b65f245fc19d', description='null'}-localhost:32775] Exception in monitor thread while connecting to server localhost:32775
+com.mongodb.MongoSocketReadException: Prematurely reached end of stream
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:112)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:648)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:513)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:356)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:316)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2023-07-07 16:43:34,917 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='64a8167f64e0b65f245fc19d', description='null'}-localhost:32775] Exception in monitor thread while connecting to server localhost:32775
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:637)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:516)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:356)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:280)
+	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:83)
+	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:33)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:107)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initialize(InternalStreamConnectionInitializer.java:62)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:144)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:313)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:340)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:789)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1025)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:648)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:513)
+	... 10 common frames omitted
+2023-07-07 16:43:35,221 INFO com.mongodb.diagnostics.logging.SLF4JLogger [SpringContextShutdownHook] Closed connection [connectionId{localValue:3, serverValue:5}] to localhost:32775 because there was a socket exception raised on another connection from this pool.

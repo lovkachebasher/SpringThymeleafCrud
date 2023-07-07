@@ -44,12 +44,11 @@ class TryToTestContainersMongoDb {
     public UserRepository userRepository;
 
 
-    @Autowired
-    ApplicationContext applicationContext;
+//    @Autowired
+//    ApplicationContext applicationContext;
 
     @BeforeEach
     void setUp() {
-
         this.userRepository.save(user1);
         this.userRepository.save(user2);
         this.userRepository.save(user3);
