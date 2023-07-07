@@ -1,0 +1,36 @@
+2023-07-07 03:41:31,662 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ThymeleafSpringBootCrudApplication using Java 20.0.1 on yokina-machine with PID 9459 (/home/yokina/yokina-gitlab/ThymeleafSprinBootCrud/target/classes started by yokina in /home/yokina/yokina-gitlab/ThymeleafSprinBootCrud)
+2023-07-07 03:41:31,664 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.0, Spring v5.3.1
+2023-07-07 03:41:31,664 INFO org.springframework.boot.SpringApplication [restartedMain] The following profiles are active: dev
+2023-07-07 03:41:31,701 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-07 03:41:31,702 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-07 03:41:32,035 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-07-07 03:41:32,064 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 26 ms. Found 1 MongoDB repository interfaces.
+2023-07-07 03:41:32,349 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8666 (http)
+2023-07-07 03:41:32,354 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8666"]
+2023-07-07 03:41:32,355 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-07-07 03:41:32,355 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-07-07 03:41:32,385 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-07-07 03:41:32,385 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 683 ms
+2023-07-07 03:41:32,466 INFO com.mongodb.diagnostics.logging.SLF4JLogger [restartedMain] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2023-07-07 03:41:32,511 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='64a75f3c6d164f23d3c13cb8', description='null'}-localhost:27017] Opened connection [connectionId{localValue:2, serverValue:40}] to localhost:27017
+2023-07-07 03:41:32,511 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-rtt-ClusterId{value='64a75f3c6d164f23d3c13cb8', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:41}] to localhost:27017
+2023-07-07 03:41:32,512 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='64a75f3c6d164f23d3c13cb8', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=18606104}
+2023-07-07 03:41:32,575 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-07-07 03:41:32,768 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-07 03:41:32,891 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8666"]
+2023-07-07 03:41:32,901 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8666 (http) with context path ''
+2023-07-07 03:41:32,909 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ThymeleafSpringBootCrudApplication in 1.563 seconds (JVM running for 2.044)
+2023-07-07 03:41:32,934 INFO com.mongodb.diagnostics.logging.SLF4JLogger [restartedMain] Opened connection [connectionId{localValue:3, serverValue:42}] to localhost:27017
+2023-07-07 03:41:40,270 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8666-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-07 03:41:40,270 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8666-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-07-07 03:41:40,272 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8666-exec-1] Completed initialization in 0 ms
+2023-07-07 03:41:40,294 TRACE com.example.ThymeleafSprinBootCrud.controller.TestLogController [http-nio-8666-exec-1] A TRACE Message
+2023-07-07 03:41:40,294 DEBUG com.example.ThymeleafSprinBootCrud.controller.TestLogController [http-nio-8666-exec-1] A DEBUG Message
+2023-07-07 03:41:40,294 INFO com.example.ThymeleafSprinBootCrud.controller.TestLogController [http-nio-8666-exec-1] An INFO Message
+2023-07-07 03:41:40,294 WARN com.example.ThymeleafSprinBootCrud.controller.TestLogController [http-nio-8666-exec-1] A WARN Message
+2023-07-07 03:41:40,294 ERROR com.example.ThymeleafSprinBootCrud.controller.TestLogController [http-nio-8666-exec-1] An ERROR Message
+2023-07-07 03:42:40,623 INFO com.example.ThymeleafSprinBootCrud.service.impl.UserServiceImpl [http-nio-8666-exec-4] User has been deleted with Id: 64a75f3c6d164f23d3c13cb9
+2023-07-07 03:42:43,023 INFO com.example.ThymeleafSprinBootCrud.service.impl.UserServiceImpl [http-nio-8666-exec-6] User has been deleted with Id: 64a75f3c6d164f23d3c13cba
+2023-07-07 03:42:57,796 INFO com.example.ThymeleafSprinBootCrud.service.impl.UserServiceImpl [http-nio-8666-exec-9] User successfully saved: User{id='', name='gggg', age=1231, phone='09123719208391'}
+2023-07-07 03:43:05,618 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-07 03:43:05,621 INFO com.mongodb.diagnostics.logging.SLF4JLogger [SpringContextShutdownHook] Closed connection [connectionId{localValue:3, serverValue:42}] to localhost:27017 because the pool has been closed.
