@@ -25,6 +25,7 @@ public class ThymeleafSpringBootCrudApplication implements CommandLineRunner {
     // позже сделать
     // --дев стенд-- и --тест стенд--
     // переименовать ветку мастер в dev
+    //Check
 
     @Override
     public void run(String... args) {
