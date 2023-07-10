@@ -136,3 +136,26 @@ com.mongodb.MongoSocketReadException: Prematurely reached end of stream
 	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
 	at java.base/java.lang.Thread.run(Thread.java:1623)
 2023-07-10 12:26:51,912 INFO com.mongodb.diagnostics.logging.SLF4JLogger [SpringContextShutdownHook] Closed connection [connectionId{localValue:3, serverValue:5}] to localhost:32779 because there was a socket exception raised on another connection from this pool.
+2023-07-10 12:35:52,169 INFO org.springframework.boot.StartupInfoLogger [main] Starting TryToTestContainersMongoDb using Java 20.0.1 on yokina-machine with PID 20676 (started by yokina in /home/yokina/yokina-gitlab/ThymeleafSprinBootCrud)
+2023-07-10 12:35:52,170 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.0, Spring v5.3.1
+2023-07-10 12:35:52,170 INFO org.springframework.boot.SpringApplication [main] The following profiles are active: dev
+2023-07-10 12:35:52,472 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-07-10 12:35:52,521 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 43 ms. Found 1 MongoDB repository interfaces.
+2023-07-10 12:35:52,781 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Cluster created with settings {hosts=[localhost:32781], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2023-07-10 12:35:52,852 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-rtt-ClusterId{value='64abd0f8b8a4c6625b448582', description='null'}-localhost:32781] Opened connection [connectionId{localValue:1, serverValue:4}] to localhost:32781
+2023-07-10 12:35:52,852 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='64abd0f8b8a4c6625b448582', description='null'}-localhost:32781] Opened connection [connectionId{localValue:2, serverValue:3}] to localhost:32781
+2023-07-10 12:35:52,852 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='64abd0f8b8a4c6625b448582', description='null'}-localhost:32781] Monitor thread successfully connected to server with description ServerDescription{address=localhost:32781, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=22304597, setName='docker-rs', canonicalAddress=64f3d107e933:27017, hosts=[64f3d107e933:27017], passives=[], arbiters=[], primary='64f3d107e933:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000001, setVersion=1, topologyVersion=TopologyVersion{processId=64abd0f6244e1b05b4f8a80e, counter=6}, lastWriteDate=Mon Jul 10 12:35:51 MSK 2023, lastUpdateTimeNanos=7713682961058}
+2023-07-10 12:35:53,145 INFO org.springframework.boot.StartupInfoLogger [main] Started TryToTestContainersMongoDb in 1.423 seconds (JVM running for 5.403)
+2023-07-10 12:35:53,454 INFO com.mongodb.diagnostics.logging.SLF4JLogger [main] Opened connection [connectionId{localValue:3, serverValue:5}] to localhost:32781
+2023-07-10 12:35:53,610 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='64abd0f8b8a4c6625b448582', description='null'}-localhost:32781] Exception in monitor thread while connecting to server localhost:32781
+com.mongodb.MongoSocketReadException: Prematurely reached end of stream
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:112)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:648)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:513)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:356)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:316)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2023-07-10 12:35:54,040 INFO com.mongodb.diagnostics.logging.SLF4JLogger [SpringContextShutdownHook] Closed connection [connectionId{localValue:3, serverValue:5}] to localhost:32781 because there was a socket exception raised on another connection from this pool.

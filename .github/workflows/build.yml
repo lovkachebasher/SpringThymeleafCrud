@@ -19,6 +19,8 @@ jobs:
           java-version: 20.0.1
       - name: Maven Verify
         run: mvn -B clean verify
+
+#       Upload code coverage report to Codecov
       - name: Test Coverage
         uses: codecov/codecov-action@v1
         with:
