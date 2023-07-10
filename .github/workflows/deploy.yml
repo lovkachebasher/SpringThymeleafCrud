@@ -18,7 +18,7 @@ jobs:
         with:
           java-version: 20.0.1
       - name: Maven Package
-        run: mvn -B clean compile -DiskTests
+        run: mvn -B clean compile package -DskipTests
 
 #        Set global environment variables:
       - name: set global env
