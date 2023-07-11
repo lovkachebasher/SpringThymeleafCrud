@@ -13,5 +13,5 @@ spring:
   data:
     mongodb:
       authentication-database: admin
-      uri: mongodb://host.docker.internal:27017/UsersDB
+      uri: ${SPRING_DATASOURCE_URL:mongodb://localhost:27017/UsersDB}
       auto-index-creation: true
