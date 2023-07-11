@@ -1,10 +1,18 @@
-version: '3.8'
+version: '2'
+
 services:
-  mongodb:
-    image: mongo:6-jammy
+  app:
+    image:  'ghcr.io/lovkachebasher/spring-thymeleaf-crud/spring-thymeleaf-crud'
     ports:
-      - '27017:27017'
-    volumes:
-      - dbdata6:/data/db
-volumes:
-  dbdata6:
+      - '8666:8666'
+    build:
+      context: .
+    container_name: app
+    depends_on:
+      - db
+    environment:
+      - SPRING_DATASOURCE_URL=mongodb://db:27017/UsersDB
+
+  db:
+    image: 'mongo'
+    container_name: db
